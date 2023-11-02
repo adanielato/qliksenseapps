@@ -1,0 +1,32 @@
+
+SHEETS
+
+OBJECTS ON SHEETS
+
+DIMENSIONS
+
+MASTER OBJECTS
+
+VARIABLES
+{"qName":"index","qDefinition":"0","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"b7222901-af3b-4a8e-a1be-274246f8b464","qType":"variable"},"qData":[],"qIsScriptCreated":true}
+{"qName":"name","qDefinition":"Invoices","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"23fa820f-edc9-46a6-9848-bdd5d5995943","qType":"variable"},"qData":[],"qIsScriptCreated":true}
+{"qName":"currentName","qDefinition":"Invoices","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"2e958a08-5f07-4d2a-bc97-f4996d1935da","qType":"variable"},"qData":[],"qIsScriptCreated":true}
+{"qName":"matches","qDefinition":"0","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"4169f6b7-9e01-4297-9b37-8966ec758b94","qType":"variable"},"qData":[],"qIsScriptCreated":true}
+
+FIELDS
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Field","qCardinal":10,"qTags":["$key","$hidden","$system","$ascii","$text"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Table","qCardinal":1,"qTags":["$key","$hidden","$system","$ascii","$text"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Rows","qCardinal":1,"qTags":["$numeric","$integer","$hidden","$system"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Fields","qCardinal":1,"qTags":["$numeric","$integer","$hidden","$system"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$FieldNo","qCardinal":10,"qTags":["$numeric","$integer","$hidden","$system"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Info","qCardinal":1,"qTags":["$hidden","$system","$ascii","$text"],"qSrcTables":[]}
+{"qName":"Invoice_ID","qCardinal":50000000,"qTags":["$numeric","$integer"],"qSrcTables":["Invoices"]}
+{"qName":"CustomerCode","qCardinal":50000,"qTags":["$numeric","$integer"],"qSrcTables":["Invoices"]}
+{"qName":"SupplierCode","qCardinal":15000,"qTags":["$numeric","$integer"],"qSrcTables":["Invoices"]}
+{"qName":"ProductCode","qCardinal":1500000,"qTags":["$numeric","$integer"],"qSrcTables":["Invoices"]}
+{"qName":"Order_ID","qCardinal":50000000,"qTags":["$numeric","$integer"],"qSrcTables":["Invoices"]}
+{"qName":"InvoiceGroup_ID","qCardinal":3,"qTags":["$numeric","$integer"],"qSrcTables":["Invoices"]}
+{"qName":"InvoiceClass_ID","qCardinal":4,"qTags":["$numeric","$integer"],"qSrcTables":["Invoices"]}
+{"qName":"InvoiceContinent_ID","qCardinal":7,"qTags":["$numeric","$integer"],"qSrcTables":["Invoices"]}
+{"qName":"InvoiceDate","qCardinal":365,"qTags":["$numeric","$integer","$timestamp","$date"],"qDerivedFieldData":{"qDerivedFieldLists":[{"qDerivedDefinitionName":"autoCalendar","qFieldDefs":[{"qId":"12872feb-e0c3-4c5b-930d-b76a254d78a6:Year","qName":"InvoiceDate.autoCalendar.Year","qMethod":"Year","qExpr":"=${autoCalendar(InvoiceDate).Year}","qTags":["$axis","$year"]},{"qId":"12872feb-e0c3-4c5b-930d-b76a254d78a6:Quarter","qName":"InvoiceDate.autoCalendar.Quarter","qMethod":"Quarter","qExpr":"=${autoCalendar(InvoiceDate).Quarter}","qTags":["$quarter","$cyclic"]},{"qId":"12872feb-e0c3-4c5b-930d-b76a254d78a6:YearQuarter","qName":"InvoiceDate.autoCalendar.YearQuarter","qMethod":"YearQuarter","qExpr":"=${autoCalendar(InvoiceDate).YearQuarter}","qTags":["$yearquarter","$qualified"]},{"qId":"12872feb-e0c3-4c5b-930d-b76a254d78a6:Month","qName":"InvoiceDate.autoCalendar.Month","qMethod":"Month","qExpr":"=${autoCalendar(InvoiceDate).Month}","qTags":["$month","$cyclic"]},{"qId":"12872feb-e0c3-4c5b-930d-b76a254d78a6:YearMonth","qName":"InvoiceDate.autoCalendar.YearMonth","qMethod":"YearMonth","qExpr":"=${autoCalendar(InvoiceDate).YearMonth}","qTags":["$axis","$yearmonth","$qualified"]},{"qId":"12872feb-e0c3-4c5b-930d-b76a254d78a6:Week","qName":"InvoiceDate.autoCalendar.Week","qMethod":"Week","qExpr":"=${autoCalendar(InvoiceDate).Week}","qTags":["$weeknumber","$cyclic"]},{"qId":"12872feb-e0c3-4c5b-930d-b76a254d78a6:Date","qName":"InvoiceDate.autoCalendar.Date","qMethod":"Date","qExpr":"=${autoCalendar(InvoiceDate).Date}","qTags":["$axis","$date","$qualified"]},{"qId":"12872feb-e0c3-4c5b-930d-b76a254d78a6:InYTD","qName":"InvoiceDate.autoCalendar.InYTD","qMethod":"InYTD","qExpr":"=${autoCalendar(InvoiceDate).InYTD}","qTags":[]},{"qId":"12872feb-e0c3-4c5b-930d-b76a254d78a6:YearsAgo","qName":"InvoiceDate.autoCalendar.YearsAgo","qMethod":"YearsAgo","qExpr":"=${autoCalendar(InvoiceDate).YearsAgo}","qTags":[]},{"qId":"12872feb-e0c3-4c5b-930d-b76a254d78a6:InQTD","qName":"InvoiceDate.autoCalendar.InQTD","qMethod":"InQTD","qExpr":"=${autoCalendar(InvoiceDate).InQTD}","qTags":[]},{"qId":"12872feb-e0c3-4c5b-930d-b76a254d78a6:QuartersAgo","qName":"InvoiceDate.autoCalendar.QuartersAgo","qMethod":"QuartersAgo","qExpr":"=${autoCalendar(InvoiceDate).QuartersAgo}","qTags":[]},{"qId":"12872feb-e0c3-4c5b-930d-b76a254d78a6:QuarterRelNo","qName":"InvoiceDate.autoCalendar.QuarterRelNo","qMethod":"QuarterRelNo","qExpr":"=${autoCalendar(InvoiceDate).QuarterRelNo}","qTags":[]},{"qId":"12872feb-e0c3-4c5b-930d-b76a254d78a6:InMTD","qName":"InvoiceDate.autoCalendar.InMTD","qMethod":"InMTD","qExpr":"=${autoCalendar(InvoiceDate).InMTD}","qTags":[]},{"qId":"12872feb-e0c3-4c5b-930d-b76a254d78a6:MonthsAgo","qName":"InvoiceDate.autoCalendar.MonthsAgo","qMethod":"MonthsAgo","qExpr":"=${autoCalendar(InvoiceDate).MonthsAgo}","qTags":[]},{"qId":"12872feb-e0c3-4c5b-930d-b76a254d78a6:MonthRelNo","qName":"InvoiceDate.autoCalendar.MonthRelNo","qMethod":"MonthRelNo","qExpr":"=${autoCalendar(InvoiceDate).MonthRelNo}","qTags":[]},{"qId":"12872feb-e0c3-4c5b-930d-b76a254d78a6:InWTD","qName":"InvoiceDate.autoCalendar.InWTD","qMethod":"InWTD","qExpr":"=${autoCalendar(InvoiceDate).InWTD}","qTags":[]},{"qId":"12872feb-e0c3-4c5b-930d-b76a254d78a6:WeeksAgo","qName":"InvoiceDate.autoCalendar.WeeksAgo","qMethod":"WeeksAgo","qExpr":"=${autoCalendar(InvoiceDate).WeeksAgo}","qTags":[]},{"qId":"12872feb-e0c3-4c5b-930d-b76a254d78a6:WeekRelNo","qName":"InvoiceDate.autoCalendar.WeekRelNo","qMethod":"WeekRelNo","qExpr":"=${autoCalendar(InvoiceDate).WeekRelNo}","qTags":[]}],"qGroupDefs":[],"qTags":[]}]},"qSrcTables":["Invoices"]}
+{"qName":"InvoiceValue","qCardinal":3235746,"qTags":["$numeric"],"qSrcTables":["Invoices"]}
